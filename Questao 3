@@ -1,0 +1,36 @@
+using System;
+
+public interface Iveiculo
+{
+    void Mover();
+
+}
+
+public class Carro : Iveiculo
+{
+    public void Mover()
+    {
+        Console.WriteLine("O carro esta se movendo!");
+    } 
+}
+
+public class Bicicleta : Iveiculo
+{
+    public void Mover()
+    {
+        Console.WriteLine("A bicicleta esta se movendo!");
+    }
+}
+
+public class Program
+{
+    static void Main()
+    {
+        Iveiculo iveiculo1 = new Bicicleta();
+        Iveiculo iveiculo2 = new Carro();
+        
+        iveiculo1.Mover();
+        iveiculo2.Mover();
+
+    }
+}
