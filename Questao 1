@@ -1,0 +1,24 @@
+using System;
+
+public class Animal
+{
+    public string? nome;
+
+
+    public void EmitirSom(string som)
+    {
+        Console.WriteLine($"{som}");
+    }
+}
+
+public class SomAnimal:Animal
+{
+    static void Main() { 
+    
+        
+        Animal animal = new Animal();
+        animal.nome = "galo";
+        Console.WriteLine(animal.nome);
+        animal.EmitirSom("Có có có");
+    }
+}
